@@ -1,0 +1,5 @@
+# Ignorar arquivos de dados locais (.txt)
+*.txt
+
+# Ignorar o executável compilado do sistema
+sistema

@@ -1,6 +1,14 @@
 -- =============================================================
 -- Projeto: Banco de Dados - Pet Shop
--- Autor: Bruno
+-- Autor: Bruno Nascimento Ribeiro Oliveira
+-- Membros do grupo: 
+-- 1- Bruno Nascimento Ribeiro Oliveira (Lider)
+-- 2-Keith Leandra Carvalho da Silva 
+-- 3- Lucas de Melo Eduardo 
+-- 4-Kaique de Oliveira Silva 
+-- 5-Otavio Santos Lidorio 
+-- 6-Davi Sousa Santana 
+-- 7-kayk Carvalho Andrade 
 -- Descrição: Script de criação do banco de dados do Pet Shop,
 --            incluindo todas as tabelas, chaves primárias,
 --            chaves estrangeiras e constraints.
