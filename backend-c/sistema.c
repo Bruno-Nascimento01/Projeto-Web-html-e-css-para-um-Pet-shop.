@@ -17,6 +17,13 @@
 // cargos, departamentos, produtos (estoque) e serviços oferecidos.
 // =============================================================
 
+// NOTE: Embora os arrays de dados sejam globais, as funções de cadastro 
+// recebem ponteiros (*struct) e IDs por parâmetro de forma intencional. 
+// Essa abordagem de design foi escolhida para garantir o desacoplamento do código, 
+// facilitar a escalabilidade do sistema (como a futura reutilização dessas mesmas 
+// funções para edição/atualização de registros) e permitir uma migração simples 
+// para variáveis locais ou bancos de dados relacionais futuramente.
+
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
@@ -171,12 +178,12 @@ int total_cargos        = 0;
 int total_departamentos = 0;
 int total_produtos      = 0;
 int total_servicos      = 0;
- 
+  
 // ============================================================
 // FUNÇÕES DE PERSISTÊNCIA (GRAVAÇÃO EM ARQUIVOS TEXTO)
 // Data serializada utilizando o caractere pipe '|' como delimitador
 // ============================================================
- 
+
 void salvarCliente() {
     FILE *arquivo = fopen("clientes.txt", "w");
     if (arquivo == NULL) { printf("Erro ao salvar clientes!\n"); return; }
